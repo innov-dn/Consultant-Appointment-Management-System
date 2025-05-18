@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Dashboard</title>
+  <link rel="stylesheet" href="doctor-dashboard.css" />
+  <script defer src="doctor-dashboard.js"></script>
+</head>
+<body class="doctor-dashboard">
+    <aside class="sidebar">
+  <h2>👨‍⚕️ Doctor Panel</h2>
+  <nav>
+    <a class="active" href="#" onclick="showSection('appointments')">My Appointments</a>
+    <a href="#" onclick="showSection('requests')">Patient Requests</a>
+    <a href="#" onclick="showSection('profile')">Profile</a>
+  </nav>
+</aside>
+
+  <main class="dashboard">
+
+    <section class="welcome-card">
+      <h1 id="welcomeText">Welcome, Doctor!</h1>
+      <p>Manage your appointments and patient information.</p>
+    </section>
+    <section id="appointments" class="dashboard-section">
+  <h2>📅 Your Appointments</h2>
+  <ul id="appointmentList"></ul>
+</section>
+
+<section id="requests" class="dashboard-section hidden">
+  <h2>📥 Patient Requests</h2>
+  <p>No new requests yet. This can show pending bookings or messages.</p>
+</section>
+
+<section id="profile" class="dashboard-section hidden">
+  <h2>👤 My Profile</h2>
+  <p><strong>Doctor Name:</strong> <span id="docName"></span></p>
+  <p><strong>Specialty:</strong> Dynamic Specialty</p>
+  <button onclick="logout()">Logout</button>
+</section>
+
+  </main>
+
+  <div id="cancelPopup" class="popup hidden">
+    <p id="cancelMsg"></p>
+    <button onclick="closeCancelPopup()">OK</button>
+  </div>
+</body>
+</html>

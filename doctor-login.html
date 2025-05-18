@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Doctor Login</title>
+  <link rel="stylesheet" href="doctor-login.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>👨‍⚕️ Doctor Login</h2>
+  <button class="home-btn" onclick="goHome()">🏠 Home</button>
+    <select id="doctorSelect">
+      <option value="">-- Select Your Name --</option>
+      <option value="Dr. Asha Singh">Dr. Asha Singh</option>
+      <option value="Dr. Ravi Mehta">Dr. Ravi Mehta</option>
+      <option value="Dr. Neha Verma">Dr. Neha Verma</option>
+    </select>
+    <button onclick="loginDoctor()">Login</button>
+  </div>
+
+  <script>
+    function goHome() {
+    window.location.href = "index.html";
+    }
+    function loginDoctor() {
+      const selectedDoctor = document.getElementById("doctorSelect").value;
+      if (!selectedDoctor) {
+        alert("Please select your name.");
+        return;
+      }
+      localStorage.setItem("loggedInDoctor", selectedDoctor);
+      window.location.href = "doctor-dashboard.html";
+    }
+  </script>
+</body>
+</html>

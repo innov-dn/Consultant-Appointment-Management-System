@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find a Doctor</title>
+  <link rel="stylesheet" href="search-doctors.css" />
+  <script defer src="search-doctors.js"></script>
+</head>
+<body>
+  <header>
+    <h1>👨‍⚕️ Search and Book Doctors</h1>
+  </header>
+
+  <main>
+    <section class="doctor-list">
+      <div class="doctor-card">
+        <img src="Dr.Asha Singh P.jpeg" alt="Dr. Asha Singh">
+        <div>
+          <h3>Dr. Asha Singh</h3>
+          <p>Cardiologist</p>
+          <input type="date" />
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="Dr.Ravi Mehta P.jpg" alt="Dr. Ravi Mehta">
+        <div>
+          <h3>Dr. Ravi Mehta</h3>
+          <p>Dermatologist</p>
+          <input type="date" />
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+
+      <div class="doctor-card">
+        <img src="Dr.Neha Verma P.jpg" alt="Dr. Neha Verma">
+        <div>
+          <h3>Dr. Neha Verma</h3>
+          <p>Neurologist</p>
+          <input type="date" />
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointments">
+      <h2>📅 My Bookings</h2>
+      <ul id="bookingList"></ul>
+    </section>
+  </main>
+  
+  <div id="popup" class="popup hidden">
+    <p id="popupMsg"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</body>
+</html>

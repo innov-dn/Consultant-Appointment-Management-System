@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9fff9;
+}
+
+header {
+  background-color: #4ade80;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.doctor-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.doctor-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.doctor-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.doctor-card h3 {
+  margin: 0;
+  color: #f97352;
+}
+
+.book-btn {
+  background: coral;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.appointments {
+  padding: 2rem;
+}
+
+.appointments h2 {
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+#bookingList {
+  list-style: none;
+  padding: 0;
+}
+
+#bookingList li {
+  background: #fffbe6;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 999;
+  text-align: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup button {
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background: #4ade80;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}

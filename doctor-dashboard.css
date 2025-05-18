@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f5fff5;
+}
+
+.sidebar {
+  width: 220px;
+  background: #c7f8cc;
+  height: 100vh;
+  padding: 20px;
+  float: left;
+}
+
+.sidebar h2 {
+  color: #2b9348;
+}
+
+.sidebar nav a {
+  display: block;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar nav a.active {
+  font-weight: bold;
+  color: #2b9348;
+}
+
+.dashboard {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+.welcome-card {
+  background: #e6ffe6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #ccc;
+  margin-bottom: 30px;
+}
+
+.appointments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.appointments li {
+  background: #fffbe6;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 999;
+  text-align: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.dashboard-section.hidden {
+  display: none;
+}
+
+.dashboard-section {
+  margin-top: 2rem;
+}

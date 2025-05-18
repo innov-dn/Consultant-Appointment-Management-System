@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Consult - Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script defer src="dashboard.js"></script>
+</head>
+<body class="dashboard-page">
+  <aside class="sidebar">
+    <h2>⚕️ Quick Consult</h2>
+    <nav>
+      <a class="active">Dashboard</a>
+    </nav>
+    <p class="sidebar-note">
+    Welcome to your personal doctor panel. Here you can view appointments, manage your schedule, and stay connected with your patients. Access your dashboard to view appointments and manage your profile.
+  </p>
+  </aside>
+
+  <main class="dashboard">
+    <section class="welcome-card">
+      <h1>Welcome back, John Doe!</h1>
+      <p>Here's a quick overview of your health activities.</p>
+    </section>
+
+    <section class="card-grid">
+      <div class="card green">
+        <h2>Find a Doctor</h2>
+        <p>Search and book appointments with specialists.</p>
+        <a href="search-doctors.html">Search Doctors →</a>
+      </div>
+      <div class="card yellow">
+        <h2>My Appointments</h2>
+        <p>View your upcoming and past appointments.</p>
+        <a>View Appointments →</a>
+      </div>
+      <div class="card orange">
+        <h2>My Profile</h2>
+        <p>Manage your personal information.</p>
+        <a>Update Profile →</a>
+      </div>
+    </section>
+
+    <section class="appointments">
+      <h2>📋 Before Your Appointment</h2>
+      <ul class="prep-list">
+        <li>✅ Note down symptoms, questions, or health issues.</li>
+        <li>✅ Avoid heavy meals if fasting is required.</li>
+        <li>✅ Carry a government ID and health card.</li>
+        <li>✅ Arrive 10-15 minutes before your scheduled time.</li>
+        <li>✅ Carry your previous prescriptions and test reports.</li>
+      </ul>
+    </section>
+    <input type="checkbox" id="symptomNote" />
+    <label for="symptomNote">I have noted down my symptoms</label>
+
+    <section class="appointments" id="notes-section">
+      <h2>📝 My Health Notes</h2>
+      <textarea id="noteInput" placeholder="Write your health note here..."></textarea>
+      <button onclick="addNote()">Add Note</button>
+
+      <ul id="notesList"></ul>
+    </section>
+
+  </main>
+</body>
+</html>
